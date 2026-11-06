@@ -1,0 +1,131 @@
+
+/* Configuración general */
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+min-height: 100vh;
+padding: 30px 16px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+background-color: #f4f6f8;
+font-family: Arial, Helvetica, sans-serif;
+color: #343a40;
+}
+
+/* Tarjeta principal */
+.tarjeta {
+width: 100%;
+max-width: 650px;
+
+padding: 35px;
+text-align: center;
+
+background-color: white;
+border-radius: 16px;
+
+box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+}
+
+/* Título */
+h1 {
+margin: 0 0 14px;
+font-size: 28px;
+}
+
+/* Descripción */
+.descripcion {
+margin: 0 auto 24px;
+max-width: 480px;
+
+color: #777;
+font-size: 15px;
+line-height: 1.5;
+}
+
+/* Contador */
+.contador {
+margin-bottom: 18px;
+
+color: #3498db;
+font-size: 48px;
+font-weight: bold;
+}
+
+/* Botón */
+button {
+margin-bottom: 26px;
+padding: 13px 28px;
+
+border: none;
+border-radius: 6px;
+
+background-color: #2ecc71;
+color: white;
+
+font-size: 16px;
+font-weight: bold;
+
+cursor: pointer;
+transition: background 0.2s, transform 0.1s;
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+background-color: #27ae60;
+}
+
+/* Efecto al presionar */
+button:active {
+transform: scale(0.97);
+}
+
+/* Tabla */
+table {
+width: 100%;
+border-collapse: collapse;
+
+border: 1px solid #ddd;
+border-radius: 8px;
+overflow: hidden;
+}
+
+/* Celdas */
+th, td {
+padding: 13px;
+
+border-bottom: 1px solid #eee;
+text-align: center;
+
+font-size: 14px;
+}
+
+/* Encabezados */
+th {
+background-color: #f5f5f5;
+color: #555;
+font-weight: bold;
+}
+
+/* Última fila */
+tbody tr:last-child td {
+border-bottom: none;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 480px) {
+
+.tarjeta {
+padding: 25px 18px;
+}
+
+h1 {
+font-size: 23px;
+}
+
+}
